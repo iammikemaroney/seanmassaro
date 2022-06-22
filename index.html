@@ -15,7 +15,7 @@
   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
 
@@ -37,7 +37,7 @@
 
   #headname {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 120%;
     padding:2%;
   }
@@ -75,6 +75,15 @@
     100% { opacity: 1; }
   }
 
+  .socials {
+    opacity: 1.0;
+    width:75px;
+  }
+
+  .socials:hover {
+    opacity: 0.8;
+    width:75px;
+  }
 
   @media only screen and (min-width: 993px){
   nav a.button-collapse {
@@ -96,6 +105,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color:#000;
   }
 
   main {
@@ -122,23 +132,21 @@
 </head>
 <body>
 
-  <nav class="nav cyan darken-3">
+  <nav class="nav blue-grey darken-2">
     <div class="nav-wrapper myContainer">
       <a id="headname" href="index.html">SEAN MASSARO</a>
       <a href="#" class="sidenav-trigger" data-target="mobile-nav">
         <i class="material-icons">menu</i>
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="">Link 1</a></li>
-        <li><a href="">Link 2</a></li>
-        <li><a href="">Link 3</a></li>
-        <li><a href="">Link 4</a></li>
+        <li><a href="index.html">home</a></li>
+        <li><a href="">music</a></li>
+        <li><a href="">contact</a></li>
       </ul>
-      <ul class="sidenav cyan darken-3" id="mobile-nav">
-        <li><a href="">Link 1</a></li>
-        <li><a href="">Link 2</a></li>
-        <li><a href="">Link 3</a></li>
-        <li><a href="">Link 4</a></li>
+      <ul class="sidenav blue-grey darken-2" id="mobile-nav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="">music</a></li>
+        <li><a href="">contact</a></li>
       </ul>
     </div>
   </nav>
@@ -148,7 +156,7 @@
       <div class="section">
         <div class="row center">
           <div class="fade-in-image">
-            <img src='img/sean_1080.jpg' style="max-width: 90%;" />
+            <img src='img/sean_02.jpg' style="max-width: 90%;"/>
           </div>
         </div>
       </div>
@@ -165,15 +173,20 @@
     </div>
   </div> -->
 
-  <footer class="page-footer cyan darken-3">
+  <footer class="page-footer blue-grey darken-2" style="position:fixed;bottom:0;left:0;width:100%;">
 
     <div class="myContainer">
       <div class="row">
         <div class="col s12">
           <p style="text-align:center">
-            <a class="white-text" href=""><i class="material-icons">play_circle_filled</i></a> &nbsp; &nbsp; &nbsp; 
-            <a class="white-text" href=""><i class="material-icons">photo_camera</i></a> &nbsp; &nbsp; &nbsp; 
-            <a class="white-text" href=""><i class="material-icons">facebook</i></a>
+            <a href="https://www.instagram.com/sean_massaro/" target="_blank"><img class="socials" src="img/icons_ig.png" /></a>
+            <a href="https://www.tiktok.com/@sean.massaro" target="_blank"><img class="socials" src="img/icons_tiktok.png" /></a>
+            <a href="https://www.facebook.com/seanmassaromusic" target="_blank"><img class="socials" src="img/icons_fb.png" /></a>
+            <a href="https://open.spotify.com/artist/50wfOWl1fJ8jGhbFXuDzhz?si=aQ9grtlqQ5-93vOrej8hkA" target="_blank"><img class="socials" src="img/icons_spot.png" /></a>
+            <a href="https://www.youtube.com/user/seanmassaromusic" target="_blank"><img class="socials" src="img/icons_yt.png" /></a>
+            <a href="https://seanmassaro.bandcamp.com" target="_blank"><img class="socials" src="img/icons_bc.png" /></a>
+            <a href="https://soundcloud.com/seanmassaro" target="_blank"><img class="socials" src="img/icons_sc.png" /></a>
+            <a href="https://music.apple.com/us/artist/sean-massaro/1334170223" target="_blank"><img class="socials" src="img/icons_apple.png" /></a>
           </p>
         </div>
       </div>
